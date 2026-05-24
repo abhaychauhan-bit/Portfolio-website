@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Singh Chauhan | CS Student & Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Abhay Singh Chauhan, B.Tech Computer Science student and Web Developer. Showcase of interactive web applications, premium skills, and certifications.">
+    <meta name="keywords" content="Abhay Singh Chauhan, Web Developer, B.Tech CSE, Portfolio, Cara, The Road, GLA University, Front-End Developer">
+    <meta name="author" content="Abhay Singh Chauhan">
+    
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Glowing Background Blobs -->
+    <div class="blob-container">
+        <div class="glowing-blob blob-1"></div>
+        <div class="glowing-blob blob-2"></div>
+        <div class="glowing-blob blob-3"></div>
+    </div>
+
+    <!-- Interactive Cyberpunk background lighting canvas -->
+    <canvas id="cyber-canvas"></canvas>
+
+    <!-- Floating Navbar -->
+    <header class="header">
+        <nav class="nav-pill" id="navbar">
+            <div class="nav-brand">
+                <div class="avatar-box">
+                    <img src="images/certificates/me.jpeg" alt="Abhay Singh Chauhan" class="nav-avatar">
+                </div>
+                <span class="brand-name">Abhay S.</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" id="nav-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificates" class="nav-link" id="nav-certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle light and dark mode">
+                    <i class="fa-solid class-toggle-icon fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle mobile menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="section hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle">Welcome to my portfolio</span>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Abhay Singh Chauhan</span>
+                    </h1>
+                    <h2 class="hero-role">
+                        I am a <span class="typing-target"></span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        A passionate Computer Science student and Web Developer specializing in crafting responsive, visually stunning, and highly interactive user interfaces. I merge engineering principles with elegant design to bring concepts to life.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-link"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/abhinav-chauhan-6b52a8313?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:abhaychauhan3204@gmail.com" aria-label="Email" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="cyber-glow-circle primary-glow"></div>
+            <div class="cyber-glow-circle secondary-glow"></div>
+            
+            <div class="container">
+                <!-- Part 1: Interactive Cyberpunk Intro Grid -->
+                <div class="about-intro-grid">
+                    <!-- Left Side: Profile Card -->
+                    <div class="profile-neon-card scroll-reveal">
+                        <div class="neon-border-box">
+                            <span class="corner-element tl"></span>
+                            <span class="corner-element tr"></span>
+                            <span class="corner-element bl"></span>
+                            <span class="corner-element br"></span>
+                            
+                            <div class="profile-avatar-container">
+                                <div class="glowing-neon-ring"></div>
+                                <img src="images/certificates/me.jpeg" alt="Abhay Singh Chauhan" class="profile-avatar-img">
+                            </div>
+                            
+                            <h2 class="profile-name">Abhay</h2>
+                            <p class="profile-title">Computer Science Student & Aspiring Web Developer</p>
+                            
+                            <div class="profile-socials">
+                                <a href="https://github.com" target="_blank" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/abhinav-chauhan-6b52a8313?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:abhaychauhan3204@gmail.com" aria-label="Email" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="#contact" aria-label="Location" class="social-btn"><i class="fa-solid fa-location-dot"></i></a>
+                            </div>
+                            
+                            <div class="profile-stats-grid">
+                                <div class="stat-card">
+                                    <span class="stat-number">3+</span>
+                                    <span class="stat-label">Projects Completed</span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-number">2+</span>
+                                    <span class="stat-label">Certifications Earned</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: Text & Skills -->
+                    <div class="about-intro-text scroll-reveal">
+                        <span class="cyber-tag">// ABOUT ME</span>
+                        <h3 class="about-greeting">Hello! I’m Abhay 👋</h3>
+                        
+                        <p class="intro-paragraph">
+                            I am a highly motivated Computer Science student with a deep passion for Web Development and Frontend Engineering. I specialize in designing and engineering responsive, highly performant, and interactive web interfaces that deliver premium user experiences.
+                        </p>
+                        <p class="intro-paragraph">
+                            By combining clean code architectures with modern visual styling, I bridge the gap between engineering logic and artistic design. My technical interests extend to AI/ML basics, responsive UI design, and creating fluid JavaScript animations. I am committed to continuous learning and building scalable web solutions that excel in speed, aesthetics, and user accessibility.
+                        </p>
+                        
+                        <div class="skill-tags-container">
+                            <h4 class="skills-title">Core Technical Skills</h4>
+                            <div class="glowing-tags-grid">
+                                <span class="glow-tag tag-cyan"><i class="fa-brands fa-html5"></i> HTML5</span>
+                                <span class="glow-tag tag-blue"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                                <span class="glow-tag tag-cyan"><i class="fa-brands fa-square-js"></i> JavaScript</span>
+                                <span class="glow-tag tag-blue"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</span>
+                                <span class="glow-tag tag-purple"><i class="fa-brands fa-github"></i> Git & GitHub</span>
+                                <span class="glow-tag tag-cyan"><i class="fa-solid fa-code"></i> C Programming</span>
+                                <span class="glow-tag tag-blue"><i class="fa-brands fa-java"></i> Java (OOP Concepts)</span>
+                                <span class="glow-tag tag-purple"><i class="fa-brands fa-python"></i> Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">The tools and technologies I use to bring ideas to life.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    
+                    <!-- HTML5 Card (Orange-Red Theme) -->
+                    <div class="skill-card skill-html5 scroll-reveal" style="--skill-color: #ff5722; --skill-color-rgb: 255, 87, 34;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Advanced • 90%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-description">Semantic Markup & Structure</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- CSS3 Card (Blue Theme) -->
+                    <div class="skill-card skill-css5 scroll-reveal" style="--skill-color: #2196f3; --skill-color-rgb: 33, 150, 243;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Advanced • 85%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <p class="skill-description">Styling, Flexbox & Animations</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="85%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript Card (Yellow Theme) -->
+                    <div class="skill-card skill-js scroll-reveal" style="--skill-color: #ffeb3b; --skill-color-rgb: 255, 235, 59;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-square-js"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Intermediate • 80%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-description">ES6, DOM & Interactive UI</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="80%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- C Programming Card (Purple Theme) -->
+                    <div class="skill-card skill-c scroll-reveal" style="--skill-color: #7952b3; --skill-color-rgb: 121, 82, 179;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Intermediate • 75%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">C Programming</h3>
+                        <p class="skill-description">Procedural Logic & Algorithms</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Responsive Web Design Card (Cyan Theme) -->
+                    <div class="skill-card skill-responsive scroll-reveal" style="--skill-color: #00bcd4; --skill-color-rgb: 0, 188, 212;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Advanced • 90%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">Responsive Web Design</h3>
+                        <p class="skill-description">Mobile-First & Adaptive Layouts</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="90%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Git & GitHub Card (Red-Brown Theme) -->
+                    <div class="skill-card skill-git scroll-reveal" style="--skill-color: #f4511e; --skill-color-rgb: 244, 81, 30;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Intermediate • 75%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-description">Version Control & Collaboration</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Java Card (Teal Theme) -->
+                    <div class="skill-card skill-java scroll-reveal" style="--skill-color: #009688; --skill-color-rgb: 0, 150, 136;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-java"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Intermediate • 75%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">Java (OOP)</h3>
+                        <p class="skill-description">Object-Oriented Programming</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Python Card (Blue-Yellow Theme) -->
+                    <div class="skill-card skill-python scroll-reveal" style="--skill-color: #ffca28; --skill-color-rgb: 255, 202, 40;">
+                        <div class="skill-hover-glow"></div>
+                        <div class="skill-card-header">
+                            <div class="skill-icon-container">
+                                <i class="fa-brands fa-python"></i>
+                            </div>
+                            <div class="skill-badge-pill">
+                                <span class="skill-badge-text">Intermediate • 75%</span>
+                            </div>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-description">Scripting & Backend Fundamentals</p>
+                        <div class="skill-progress-wrapper">
+                            <div class="skill-progress-bar" data-progress="75%"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world applications built to solve problems and deliver outstanding user experience</p>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: E-Commerce Fashion Platform ("Cara") -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-box">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="btn-project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <!-- Creative Canvas/CSS background graphic representing Cara -->
+                            <div class="project-graphic cara-graphic">
+                                <div class="graphic-circle"></div>
+                                <div class="graphic-elements">
+                                    <span>👗 Fashion Store</span>
+                                    <div class="graphic-bar"></div>
+                                    <div class="graphic-cart"><i class="fa-solid fa-bag-shopping"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag-badge">HTML5</span>
+                                <span class="project-tag-badge">CSS3</span>
+                                <span class="project-tag-badge">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">E-Commerce Fashion Platform <span class="project-alias">"Cara"</span></h3>
+                            <p class="project-description">
+                                Engineered a premium, multi-page storefront featuring custom designed product landing pages, dynamic product detail grids, and structured shopping cart logic with a responsive modern UI. 
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Optimized discovery via intuitive CSS-focused navigational structures.</li>
+                                <li>Custom CSS layouts emphasizing smooth micro-animations.</li>
+                                <li>Implemented responsive layouts supporting all desktop, tablet, and mobile screens.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/abhaychauhan-bit/Ecommerce-Website" target="_blank" class="btn-proj btn-proj-secondary" aria-label="View Cara source code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://ecommerce-website-azure-kappa.vercel.app/" target="_blank" class="btn-proj btn-proj-primary" aria-label="View Cara live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Travel & Tour Booking Interface ("The Road") -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-box">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="btn-project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <!-- Creative Canvas/CSS background graphic representing The Road -->
+                            <div class="project-graphic road-graphic">
+                                <div class="graphic-circle"></div>
+                                <div class="graphic-elements">
+                                    <span>🏔️ The Road Tour</span>
+                                    <div class="graphic-bar"></div>
+                                    <div class="graphic-compass"><i class="fa-solid fa-compass"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag-badge">HTML5</span>
+                                <span class="project-tag-badge">CSS3</span>
+                                <span class="project-tag-badge">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Travel & Tour Booking UI <span class="project-alias">"The Road"</span></h3>
+                            <p class="project-description">
+                                Architected a visually captivating travel landing page centered around a cinematic, full-bleed hero video showcase and smooth transition states.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed a minimalist, modern reservation and booking panel interface.</li>
+                                <li>Enhanced layouts utilizing advanced CSS styling and typography structures.</li>
+                                <li>Leveraged dynamic JavaScript triggers for immersive interaction points.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com/abhaychauhan-bit/Tour-aap" target="_blank" class="btn-proj btn-proj-secondary" aria-label="View The Road source code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://tour-aap.vercel.app/" target="_blank" class="btn-proj btn-proj-primary" aria-label="View The Road live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Personal Portfolio Website -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-box">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn-project-link" aria-label="View Project Code"><i class="fa-brands fa-github"></i></a>
+                                    <a href="#" class="btn-project-link" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+                            </div>
+                            <!-- Creative Canvas/CSS background graphic representing Portfolio -->
+                            <div class="project-graphic portfolio-graphic">
+                                <div class="graphic-circle"></div>
+                                <div class="graphic-elements">
+                                    <span>💻 Portfolio UI</span>
+                                    <div class="graphic-bar"></div>
+                                    <div class="graphic-avatar-circle"><img src="images/certificates/me.jpeg" alt="mini avatar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="project-tag-badge">HTML5</span>
+                                <span class="project-tag-badge">CSS3</span>
+                                <span class="project-tag-badge">JavaScript</span>
+                            </div>
+                            <h3 class="project-title">Premium Personal Developer Portfolio</h3>
+                            <p class="project-description">
+                                Engineered a fully responsive personal brand space (this website) following state-of-the-art UI principles including dark/light modes and scroll animation controllers.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Responsive architecture optimized dynamically using flexible layouts.</li>
+                                <li>Bespoke visual theme engine (Light & Dark) powered natively by CSS variables.</li>
+                                <li>Features high-fidelity replication of high-end developer resume aesthetics.</li>
+                            </ul>
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" class="btn-proj btn-proj-secondary" aria-label="View portfolio source code">
+                                    <i class="fa-brands fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="./index.html" class="btn-proj btn-proj-primary" aria-label="View portfolio live demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Education & Timeline</h2>
+                    <p class="section-subtitle">Academic qualifications and structural educational milestones</p>
+                </div>
+                
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-line-fill"></div>
+                    
+                    <!-- Timeline Item 1: GLA University -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Aug 2025 - May 2029</span>
+                            <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                            <h4 class="timeline-institution">GLA University, Mathura</h4>
+                            <p class="timeline-desc">
+                                Pursuing an engineering degree focused on computer architecture, algorithms, database systems, object-oriented concepts, and software engineering methodologies. Active learner participating in tech clubs and web development projects.
+                            </p>
+                            <div class="timeline-status-badge">Currently Enrolled</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2: St. Paul's Class 12 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - 2024</span>
+                            <h3 class="timeline-title">Higher Secondary Education (Class 12th)</h3>
+                            <h4 class="timeline-institution">St. Paul's Senior Secondary School, Mathura</h4>
+                            <p class="timeline-desc">
+                                Completed high school qualifications with a focus on Physics, Chemistry, Mathematics, and Computer Science studies. Formed crucial mathematical modeling and software logic basics here.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 3: St. Paul's Class 10 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2022</span>
+                            <h3 class="timeline-title">Secondary Education (Class 10th)</h3>
+                            <h4 class="timeline-institution">St. Paul's Senior Secondary School, Mathura</h4>
+                            <p class="timeline-desc">
+                                Foundation level secondary school curriculum covering standard humanities, sciences, languages, and introductory computing concepts.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates Section -->
+        <section class="section certificates-section" id="certificates">
+            <div class="cyber-glow-circle primary-glow" style="top: 20%; left: 10%;"></div>
+            <div class="cyber-glow-circle secondary-glow" style="bottom: 20%; right: 10%;"></div>
+            
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Certificates</h2>
+                    <p class="section-subtitle">Professional certifications and achievements</p>
+                </div>
+                
+                <div class="certificates-grid" id="certificates-grid">
+                    <!-- Dynamically generated via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Fullscreen Certificate Lightbox Modal Overlay -->
+        <div class="cert-lightbox-modal" id="cert-lightbox">
+            <div class="cert-lightbox-backdrop"></div>
+            <div class="cert-lightbox-content">
+                <button class="cert-lightbox-close" id="cert-lightbox-close-btn" aria-label="Close Preview">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="cert-lightbox-img-box">
+                    <img src="" alt="" class="cert-lightbox-img" id="cert-lightbox-img-target">
+                </div>
+                <div class="cert-lightbox-details">
+                    <h4 id="cert-lightbox-title-target">Certificate Title</h4>
+                    <p id="cert-lightbox-issuer-target">Issuer Name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project idea, question, or want to connect? Drop a message!</p>
+                </div>
+                
+                <div class="contact-grid">
+                    
+                    <!-- Contact Information Column -->
+                    <div class="contact-info scroll-reveal">
+                        <h3>Contact Information</h3>
+                        <p class="contact-pitch">Feel free to reach out via these contact details. You can copy the email or phone number to your clipboard with a single tap!</p>
+                        
+                        <div class="info-cards-list">
+                            <!-- Email Card -->
+                            <div class="info-card" id="email-card" title="Click to copy email">
+                                <div class="info-card-glow"></div>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span>Email Me</span>
+                                    <p class="info-text" id="email-text">abhaychauhan3204@gmail.com</p>
+                                </div>
+                                <div class="info-copy-indicator" id="email-copy-indicator">
+                                    <i class="fa-solid fa-copy"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Phone Card -->
+                            <div class="info-card" id="phone-card" title="Click to copy phone number">
+                                <div class="info-card-glow"></div>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span>Call Me</span>
+                                    <p class="info-text" id="phone-text">+91-9045462401</p>
+                                </div>
+                                <div class="info-copy-indicator" id="phone-copy-indicator">
+                                    <i class="fa-solid fa-copy"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Location Card -->
+                            <div class="info-card">
+                                <div class="info-card-glow"></div>
+                                <div class="info-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="info-details">
+                                    <span>Location</span>
+                                    <p class="info-text">Mathura (U.P), India 281001</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="availability-notice">
+                            <span class="pulse-dot"></span>
+                            <span>Currently open to freelance and internship roles</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form Column -->
+                    <div class="contact-form-box scroll-reveal">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="form-container">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project collaboration..." required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message details here..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-spinner hidden"><i class="fa-solid fa-spinner fa-spin"></i> Sending...</span>
+                            </button>
+                            
+                            <!-- Success and Error Messages -->
+                            <div class="form-feedback hidden" id="form-feedback">
+                                <span class="feedback-icon"><i class="fa-solid fa-circle-check"></i></span>
+                                <span class="feedback-msg">Your message has been sent successfully!</span>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">Abhay Singh Chauhan</span>
+                <p>B.Tech CSE Student & Web Developer</p>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abhinav-chauhan-6b52a8313?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:abhaychauhan3204@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <div class="footer-copyright text-center">
+            <p>&copy; 2026 Abhay Singh Chauhan. All Rights Reserved. Built with ❤️ using HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="scroll-to-top" id="scroll-to-top-btn" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Clipboard Toast Alerts -->
+    <div class="toast" id="toast-message">
+        <span id="toast-text">Text copied to clipboard!</span>
+    </div>
+
+    <!-- Custom Logic Script -->
+    <script src="script.js"></script>
+</body>
+</html>
